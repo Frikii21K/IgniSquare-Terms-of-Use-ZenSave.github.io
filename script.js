@@ -2,7 +2,7 @@ const THEME_STORAGE_KEY = "selectedTheme";
 
 function safeStorageGet(key) {
   try {
-    return localStorage.getItem(key);
+    return window.localStorage ? window.localStorage.getItem(key) : null;
   } catch (_) {
     return null;
   }
@@ -10,7 +10,9 @@ function safeStorageGet(key) {
 
 function safeStorageSet(key, value) {
   try {
-    localStorage.setItem(key, value);
+    if (window.localStorage) {
+      window.localStorage.setItem(key, value);
+    }
   } catch (_) {
     // Ignore storage errors in restricted WebViews
   }
@@ -48,15 +50,18 @@ function applyTheme(theme) {
 applyTheme(safeStorageGet(THEME_STORAGE_KEY));
 
 // Función requerida por Google Translate para inicializar el widget.
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'es',
-    autoDisplay: false
-  }, 'google_translate_element');
+window.googleTranslateElementInit = function () {
+  const g = window.google;
+  if (g && g.translate && g.translate.TranslateElement) {
+    window._googleTranslateElement = new g.translate.TranslateElement({
+      pageLanguage: 'es',
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
 
   // Espera hasta que el widget esté listo
   setTimeout(triggerTranslation, 1000);
-}
+};
 
 function triggerTranslation() {
   const googleCombo = document.querySelector('.goog-te-combo');
