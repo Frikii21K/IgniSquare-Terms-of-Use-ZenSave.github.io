@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta la política de privacidad de ZenSave para conocer cómo protegemos tu información personal y financiera.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Política de Privacidad</title>
+
+  <!-- Fuente Material Design -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Contenedor del widget de Google Translate, ocultado fuera de pantalla -->
+  <div id="google_translate_element"></div>
+
+  <!-- Custom Widget de Traducción -->
+  <div id="custom_translate_wrapper">
+    <select id="custom_translate">
+      <option value="">🌍 Idiomas</option>
+      <option value="es">Español</option>
+      <option value="en">Inglés</option>
+      <option value="fr">Francés</option>
+      <option value="pt-BR">Português (Brasil)</option>
+      <option value="de">Alemán</option>
+      <option value="it">Italiano</option>
+    </select>
+  </div>
+
+  <main class="policy-container">
+    <h1 class="policy-title">Política de Privacidad</h1>
+    <p class="policy-text"><strong>Última actualización:</strong> 12/11/2026</p>
+    <p class="policy-text">
+      En <strong>ZenSave</strong>, operado por <strong>IgniSquare</strong>, respetamos y protegemos la privacidad de nuestros usuarios. IgniSquare es un nombre comercial utilizado para ofrecer servicios tecnológicos y desarrollar aplicaciones móviles. Cumplimos con normativas internacionales, como el GDPR en la Unión Europea y la CCPA/CPRA en California, así como con la legislación local de la República Dominicana. ZenSave funciona bajo una filosofía <strong>primero en tu dispositivo (Local-First)</strong>, <strong>100 % libre de anuncios</strong> y sin venta de datos. Al utilizar ZenSave, aceptas esta Política de Privacidad y nuestros <a href="https://frikii21k.github.io/IgniSquare-Terms-of-Use-ZenSave.github.io/" target="_blank" rel="noopener">Términos de Uso</a>. Esta política describe de manera clara y transparente cómo recopilamos, usamos, almacenamos y protegemos la información personal y financiera que nos proporcionas.
+    </p>
+
+    <!-- === Sección de acceso rápido a políticas por región === -->
+    <section class="policy-region-links">
+      <h2 class="policy-section-title">Políticas por Región</h2>
+      <p class="policy-text">
+        Aunque ZenSave opera de forma nativa en español e inglés, está disponible globalmente en Google Play. Si resides en Brasil o Canadá, consulta la normativa específica para tu país:
+      </p>
+      <div class="policy-links-grid">
+        <!-- Grupo 1: Brasil -->
+        <div class="policy-link-item">
+          <h3 class="policy-subsection-title">Brasil (LGPD)</h3>
+          <p class="policy-text">
+            Requisitos y derechos según la Lei Geral de Proteção de Dados.
+          </p>
+          <a href="lgpd-brasil.html"
+             class="policy-link-button" target="_blank" rel="noopener">
+            Ver Política LGPD Brasil
+          </a>
+        </div>
+        <!-- Grupo 2: Canadá -->
+        <div class="policy-link-item">
+          <h3 class="policy-subsection-title">Canadá (PIPEDA)</h3>
+          <p class="policy-text">
+            Requisitos y derechos según la Personal Information Protection and Electronic Documents Act.
+          </p>
+          <a href="pipeda-canada.html"
+             class="policy-link-button" target="_blank" rel="noopener">
+            Ver Política PIPEDA Canadá
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="data-safety">
+      <h2 class="policy-section-title">Data Safety</h2>
+      <p class="policy-text">
+        En ZenSave detallamos a continuación qué datos recogemos o procesamos, con qué finalidad, con quién se comparten (o si permanecen solo en tu teléfono) y cómo los protegemos:
+      </p>
+      <div class="policy-table-wrapper">
+        <table class="policy-table">
+          <thead>
+            <tr>
+              <th>Categoría de datos</th>
+              <th>Uso</th>
+              <th>Compartido con</th>
+              <th>Cifrado tránsito / reposo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Datos financieros y de presupuesto</strong><br>(sueldo, fechas de cobro, deducciones, moneda, gastos, ingresos, metas y objetivos)</td>
+              <td>Funcional (cálculo en tu teléfono del dinero disponible, margen diario, proyecciones y respaldo opcional en la nube si eres Pro)</td>
+              <td>No compartido por defecto (se queda en tu dispositivo).<br>Solo se guarda en tu copia de seguridad privada en la nube (Firebase) si vinculas tu cuenta de Google y tienes ZenSave Pro.</td>
+              <td>Sí / Sí</td>
+            </tr>
+            <tr>
+              <td><strong>Información de cuenta Google (opcional)</strong><br>(correo electrónico, nombre visible y foto de perfil de Google)</td>
+              <td>Opcional: iniciar sesión, mostrar tu perfil y saludo en Ajustes, y asociar tu respaldo o licencia Pro</td>
+              <td>Firebase (Google) para gestionar tu cuenta y respaldo. No se comparte con terceros comerciales.</td>
+              <td>Sí / Sí</td>
+            </tr>
+            <tr>
+              <td><strong>Notificaciones de pagos y portapapeles (opcional)</strong><br><em>Solo si activas la detección automática en Ajustes</em></td>
+              <td>Leer el monto y comercio de notificaciones autorizadas o sugerir un importe copiado al abrir el registro rápido</td>
+              <td>No compartido<br>(se analiza únicamente dentro de tu teléfono; ningún mensaje bancario sale del dispositivo)</td>
+              <td>Procesamiento 100 % local en el dispositivo</td>
+            </tr>
+            <tr>
+              <td><strong>Historial de compras (ZenSave Pro)</strong><br>(identificador de compra, producto y fecha de activación)</td>
+              <td>Verificar que tu pago único es válido y permitir recuperar ZenSave Pro en otro teléfono</td>
+              <td>Google Play y, si inicias sesión, Firebase para asociar tu licencia</td>
+              <td>Sí / Sí</td>
+            </tr>
+            <tr>
+              <td><strong>Datos de uso, fallos y rendimiento</strong><br>(reportes de errores, métricas técnicas generales y notificaciones del sistema)</td>
+              <td>Corregir errores, prevenir uso abusivo y mejorar el rendimiento general (sin incluir tus saldos ni montos)</td>
+              <td>Firebase Analytics, Crashlytics, Performance y mensajería de Google</td>
+              <td>Sí / Sí</td>
+            </tr>
+            <tr>
+              <td><strong>Datos biométricos</strong><br>(huella dactilar, rostro o PIN del sistema)</td>
+              <td>Opcional (Pro): bloquear el acceso a la app cuando sales o regresas</td>
+              <td>No compartido ni leído por ZenSave<br>(lo verifica únicamente el sistema de seguridad propio de tu teléfono Android)</td>
+              <td>Gestionado localmente por Android</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="policy-text">
+        <strong>Para eliminar tus datos desde la app (si vinculaste tu cuenta de Google):</strong> ve a <em>Ajustes → Seguridad y Privacidad → Gestión de Cuenta en la Nube → Eliminar mi Cuenta</em> y espera la cuenta regresiva de 10 segundos para confirmar. Todos tus datos locales y en la nube se borrarán de inmediato e irreversiblemente.<br>
+        <strong>Si usas ZenSave sin cuenta de Google:</strong> tus datos financieros existen únicamente en tu dispositivo y puedes eliminarlos al instante desinstalando la aplicación o borrando su almacenamiento en los ajustes de Android.
+      </p>
+    </section>
+
+    <!-- === Bloque: Apps instaladas (Installed apps) — Bajo "Data Safety" === -->
+    <section id="installed-apps">
+      <h3 class="policy-subsection-title">Datos sobre aplicaciones instaladas</h3>
+      <p class="policy-text">
+        ZenSave <strong>no recopila ni envía tu lista de aplicaciones instaladas a servidores externos ni a redes publicitarias</strong>.
+        Únicamente cuando entras en <em>Ajustes → Detección de Pagos</em> para activar de forma voluntaria la detección automática de gastos e ingresos, la aplicación consulta localmente las aplicaciones instaladas en tu teléfono para mostrarte sus nombres e iconos en pantalla y permitirte elegir cuáles bancos, billeteras o comercios deseas monitorear.
+      </p>
+      <p class="policy-text">
+        <strong>Compartido con:</strong> Ningún tercero (la consulta ocurre únicamente dentro de tu dispositivo).
+      </p>
+      <p class="policy-text">
+        <strong>Finalidad:</strong> Mostrar el selector local de aplicaciones en la función opcional de Detección de Pagos.
+        <strong>Base legal:</strong> Tu consentimiento explícito al habilitar esta herramienta y conceder el acceso a notificaciones en Android.
+      </p>
+      <p class="policy-text">
+        <strong>Cómo limitarlo o desactivarlo:</strong> Puedes apagar la función o desmarcar cualquier aplicación en <em>Ajustes → Detección de Pagos</em>, o revocar el permiso de acceso a notificaciones desde los ajustes del sistema Android en cualquier momento.
+      </p>
+      <p class="policy-text">
+        Si deseas más información o ejercer derechos sobre estos datos, escríbenos a: <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a>.
+      </p>
+    </section>
+    <!-- === Fin bloque === -->
+
+    <section>
+      <h2 class="policy-section-title">Compras Premium (Pago Único)</h2>
+      <p class="policy-text">
+        Cuando adquieres <strong>ZenSave Pro</strong> mediante un pago único, guardamos información básica para comprobar que tu compra es válida y permitir recuperarla si cambias de teléfono (si vinculas tu cuenta de Google, esta verificación también se guarda en la nube). Esto incluye:
+      </p>
+      <ul class="policy-list">
+        <li><strong>Identificador de compra:</strong> Un comprobante técnico que nos proporciona Google Play para verificar que realmente realizaste la compra.</li>
+        <li><strong>Identificador del producto:</strong> Confirma que adquiriste el producto oficial de por vida <em>ZenSave Pro</em>.</li>
+        <li><strong>Fecha de activación:</strong> El momento en que tu compra se registró.</li>
+      </ul>
+      <p class="policy-text">
+        <strong>¿Para qué lo usamos?</strong>
+      </p>
+      <ul class="policy-list">
+        <li>Verificar que tu compra es válida y así activar permanentemente las funciones Pro (detección automática de pagos, metas ilimitadas, simulador de escenarios, exportación a Excel y CSV, respaldo automático en la nube, widgets Pro y bloqueo biométrico).</li>
+        <li>Permitir que recuperes tu acceso Pro si cambias de teléfono o reinstalas la aplicación sin coste adicional.</li>
+      </ul>
+      <p class="policy-text">
+        <strong>¿Dónde se guarda y por cuánto tiempo?</strong>
+      </p>
+      <ul class="policy-list">
+        <li>Estos datos se conservan en tu dispositivo y, si iniciaste sesión con Google, de forma segura en nuestra base de datos en la nube mientras tu compra y cuenta sigan activas.</li>
+        <li>Al ser un pago único, el acceso Pro es vitalicio y no requiere renovación ni suscripción.</li>
+        <li>Si deseas que eliminemos tus registros en nuestros servidores, puedes usar la opción <em>Eliminar mi Cuenta</em> dentro de la app o enviarnos un correo a <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a> y procederemos conforme a tu solicitud. Ten en cuenta que eliminar estos datos de nuestros servidores borrará el vínculo guardado en la cuenta eliminada.</li>
+      </ul>
+      <p class="policy-text">
+        <strong>Gestión de la compra:</strong>
+      </p>
+      <ul class="policy-list">
+        <li><strong>Compra única permanente:</strong> No hay renovaciones automáticas ni cargos recurrentes. Pagas una sola vez y obtienes acceso de por vida.</li>
+        <li><strong>Solicitar reembolso:</strong> Debes hacerlo directamente desde tu cuenta de Google Play dentro de las primeras 48 horas o según las políticas de Google Play; nosotros no gestionamos reembolsos directamente.</li>
+        <li><strong>Restaurar compra:</strong> Si cambias de dispositivo o reinstalas la app, pulsa "Restaurar compra" en la pantalla ZenSave Pro para recuperar tu acceso sin coste adicional. Asegúrate de usar en Google Play la misma cuenta de Google con la que realizaste la compra.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">1. Información que Recopilamos</h2>
+
+      <section>
+        <p class="policy-text"><strong>1.1. Datos Financieros y de Presupuesto</strong></p>
+        <ul class="policy-list">
+          <li>
+            <strong>Registro en tiempo real en tu teléfono:</strong>
+            ZenSave guarda los datos que registras para organizar tus finanzas: sueldo (mensual o por cobro), fechas y frecuencia de pago, deducciones opcionales, moneda principal y de referencia (pesos dominicanos, dólares estadounidenses o euros), gastos, ingresos extra, gastos fijos recurrentes, metas de ahorro, abonos, lista de deseos u objetivos, preferencia de Modo Discreto y recordatorios.
+            <ul class="policy-list">
+              <li>
+                <strong>Almacenamiento local por defecto:</strong> Se guardan en la base de datos privada dentro de tu dispositivo (con el respaldo genérico automático de Android desactivado para mayor privacidad). Si no vinculas una cuenta con respaldo en la nube, estos datos nunca salen de tu teléfono.
+              </li>
+              <li>
+                <strong>Respaldo opcional en la nube (ZenSave Pro):</strong> Si vinculas tu cuenta de Google y tienes ZenSave Pro, estos registros pueden sincronizarse de forma automática cada 24 horas o manualmente hacia nuestra nube segura (Firebase) para que no pierdas tu historial si cambias de dispositivo.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>1.2. Información de Perfil, Edad (+16) y Configuración</strong></p>
+        <p class="policy-text">
+          Al abrir la app por primera vez, te pedimos confirmar tu edad para garantizar que tienes <strong>16 años o más</strong> y cumplir con la protección de menores. Esta información se usa localmente para validar el acceso y nunca se comparte con terceros. Si en Ajustes decides vincular tu cuenta de Google, guardamos tu correo electrónico, nombre visible y foto de perfil de Google en tu perfil en la nube únicamente para mostrarte tu sesión y asociar tus datos.
+        </p>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>1.3. Datos de Uso y Rendimiento</strong></p>
+        <p class="policy-text">
+          Recopilamos información operativa básica sobre estabilidad y rendimiento (por ejemplo, reportes de cierres inesperados, tiempos de carga y uso general de funciones) mediante herramientas de Google Firebase (Analytics, Crashlytics y Performance) para corregir fallos y mejorar la aplicación. Estas métricas técnicas <strong>nunca recopilan tus saldos, montos de dinero, ingresos ni nombres de comercios</strong>.
+        </p>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>1.4. Información de Autenticación</strong></p>
+        <p class="policy-text">
+          Puedes usar ZenSave por completo sin iniciar sesión ni crear cuenta. Si deseas vincular una cuenta, utilizamos Firebase Authentication únicamente mediante Google Sign-In. No existe creación manual de cuenta con contraseña ni almacenamiento local de contraseñas, y ZenSave <strong>nunca te pedirá claves de acceso a tus cuentas bancarias</strong>.
+        </p>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>1.5. Permisos del Dispositivo</strong></p>
+        <p class="policy-text">
+          Para el correcto funcionamiento de las opciones que decidas activar en ZenSave, solicitamos o declaramos los siguientes permisos, justificando su uso de manera explícita:
+        </p>
+        <ul class="policy-list">
+          <li>
+            <strong>Acceso a Notificaciones (opcional, activado manualmente por ti):</strong>
+            <ul class="policy-list">
+              <li><strong>Uso:</strong> Solo se solicita si activas en <em>Ajustes → Detección de Pagos</em> la lectura automática de cargos o ingresos desde las notificaciones de las apps bancarias o comercios que elijas.</li>
+              <li><strong>Beneficio y privacidad:</strong> Evita tener que anotar tus compras a mano. Todo se procesa dentro de la memoria de tu teléfono y descartamos de inmediato cualquier mensaje con códigos de seguridad, OTP, claves, tokens o promociones. Ningún mensaje sale de tu teléfono.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Notificaciones del Sistema y Barra Permanente (opcional):</strong>
+            <ul class="policy-list">
+              <li><strong>Uso:</strong> Mostrar los recordatorios que actives (día de cobro, resumen nocturno, alertas si excedes tu ritmo diario de gasto, confirmaciones de pagos detectados y la barra opcional en segundo plano con tu dinero disponible).</li>
+              <li><strong>Beneficio:</strong> Mantener el control de tu margen del día y abonar rápidamente sin tener que abrir toda la app. Puedes desactivar estos permisos cuando quieras.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Alarmas Exactas y Pantalla de Alarma de Meta:</strong>
+            <ul class="policy-list">
+              <li><strong>Uso:</strong> Hacer sonar puntualmente tus alarmas de ahorro en las horas programadas (mostrando si lo activas una tarjeta rápida para abonar desde la pantalla), reprogramarlas si reinicias el teléfono y ofrecer vibración discreta al tocar botones.</li>
+              <li><strong>Beneficio:</strong> Asegura que no olvides aportar a tus metas en el momento elegido.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Autenticación Biométrica (opcional · ZenSave Pro):</strong>
+            <ul class="policy-list">
+              <li><strong>Uso:</strong> Permite bloquear la aplicación con tu huella dactilar, reconocimiento facial o PIN del teléfono a través del sistema de seguridad oficial de Android.</li>
+              <li><strong>Beneficio:</strong> Mayor privacidad física si compartes o dejas tu teléfono cerca de otras personas, sin que ZenSave acceda jamás a tu huella o rostro.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Facturación de Google Play, Internet y Acceso Rápido:</strong>
+            <ul class="policy-list">
+              <li><strong>Uso:</strong> Gestionar la compra única o restauración de ZenSave Pro en Google Play, sincronizar tasas de cambio públicas entre monedas, usar las funciones opcionales en la nube y ofrecer el botón rápido <em>+ Gasto</em> en el panel desplegable de Android.</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="policy-text">
+          <strong>Nota:</strong>
+        </p>
+        <ul class="policy-list">
+          <li>ZenSave <strong>no utiliza permisos de ubicación (GPS), cámara, micrófono ni contactos, y tampoco se integra con Health Connect</strong>.</li>
+          <li>Tampoco hace uso de cookies publicitarias ni recopila identificador de publicidad para mostrar anuncios.</li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>1.6. Comprobación de Conectividad y Tasas de Cambio</strong></p>
+        <p class="policy-text">
+          Todas las funciones financieras cotidianas de ZenSave funcionan sin necesidad de Internet. Únicamente requieren conexión activa acciones como iniciar sesión con Google, respaldar o restaurar copias en la nube, comprar o restaurar ZenSave Pro, consultar estas políticas web y actualizar automáticamente cada 12 horas (o cuando lo pidas) las tasas de cambio referenciales entre pesos dominicanos, dólares y euros desde fuentes públicas mediante conexiones seguras (sin enviar datos personales ni movimientos financieros).
+        </p>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>1.7. Información del Sistema</strong></p>
+        <p class="policy-text">
+          ZenSave utiliza o prepara datos técnicos básicos del sistema para ayudar en la detección y resolución de errores (a través de reportes técnicos de fallos y, solo cuando decides enviarnos un correo desde <em>Ajustes → Soporte y sugerencias</em>):
+        </p>
+        <ul class="policy-list">
+          <li><strong>Versión de la app:</strong> número de versión instalado.</li>
+          <li><strong>Modelo de dispositivo:</strong> incluido en reportes automáticos de fallos técnicos para saber qué equipo presentó un error.</li>
+          <li><strong>Versión del sistema operativo:</strong> versión de Android instalada.</li>
+          <li><strong>Resolución de pantalla:</strong> ancho × alto en píxeles (preparado al pulsar enviar en soporte).</li>
+          <li><strong>Densidad de píxeles (DPI):</strong> densidad de la pantalla (preparado al pulsar enviar en soporte).</li>
+        </ul>
+        <p class="policy-text">
+          <strong>Uso:</strong> Esta información se emplea <strong>únicamente</strong> para:
+        </p>
+        <ul class="policy-list">
+          <li>Identificar en qué dispositivo ocurre un fallo técnico o problema visual.</li>
+          <li>Ofrecer un soporte técnico más preciso cuando nos escribes a <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a>.</li>
+          <li>Orientar futuras correcciones y optimizaciones específicas por dispositivo.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="policy-section-title">1.8. Detección Automática de Idioma</h2>
+        <p class="policy-text">
+          ZenSave detecta automáticamente el idioma configurado en tu teléfono Android (español o inglés) al iniciar la app para mostrar tanto las pantallas como los widgets y las notificaciones en tu idioma de forma uniforme, sin enviar esta información a terceros.
+        </p>
+      </section>
+
+      <section id="autodeteccion-privacidad">
+        <h2 class="policy-section-title">1.9. Detección Automática de Pagos y Portapapeles — Privacidad por Diseño</h2>
+        <p class="policy-text">
+          ZenSave incorpora funciones opcionales de captura inteligente diseñadas bajo el principio de <strong>Privacidad por Diseño (Privacy by Design)</strong>:
+        </p>
+        <ul class="policy-list">
+          <li><strong>Análisis 100 % en tu dispositivo (Notificaciones):</strong> Si activas la detección automática de pagos en <em>Ajustes → Detección de Pagos</em>, ZenSave escucha únicamente las notificaciones de las aplicaciones o filtros que autorices, evita duplicados dentro de un breve margen de tiempo y descarta de inmediato cualquier mensaje con códigos de verificación, claves, OTP, PIN o publicidad. El contenido de tus notificaciones nunca sale de tu teléfono ni se sube a Internet.</li>
+          <li><strong>Sugerencia puntual desde el portapapeles:</strong> Cuando abres el registro rápido de gastos dentro de la app, ZenSave puede revisar brevemente si acabas de copiar un recibo o monto válido para ofrecerte rellenarlo con un toque (evitando duplicar gastos recién detectados por notificación). Nunca leemos el portapapeles en segundo plano ni almacenamos un historial de lo que copias.</li>
+          <li><strong>Control total y revocación inmediata:</strong> Puedes pausar, ajustar o apagar estas funciones en cualquier momento desde Ajustes o desde los permisos de Android.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="policy-section-title">1.10. Exportación de Reportes y Modo Discreto</h2>
+        <p class="policy-text">
+          Si generas un reporte en Excel o CSV con ZenSave Pro, el archivo se crea directamente dentro de tu teléfono y solo se comparte con la aplicación que tú selecciones (por ejemplo, tu correo, Google Drive o mensajería). IgniSquare no recibe ni almacena los reportes que exportas. Del mismo modo, el Modo Discreto oculta tus saldos en pantalla y widgets de manera local.
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">2. Uso de la Información</h2>
+      <p class="policy-text">
+        La información que recopilamos o procesamos se utiliza para:
+      </p>
+      <ul class="policy-list">
+        <li>
+          <strong>Organización financiera y personalización:</strong> Calcular tu disponible real del ciclo salarial, margen diario, seguimiento de metas de ahorro, proyecciones del simulador "What-If?", reportes exportables y widgets de escritorio.
+        </li>
+        <li>
+          <strong>Optimización y mejora:</strong> Analizar la estabilidad y rendimiento técnico general de la app para corregir errores y mejorar la experiencia de uso (sin examinar tus movimientos financieros personales).
+        </li>
+        <li>
+          <strong>Seguridad y autenticación:</strong> Gestionar de forma segura el acceso opcional con tu cuenta de Google, tus respaldos en la nube y proteger nuestros servicios frente a manipulaciones o tráfico automatizado abusivo.
+        </li>
+        <li>
+          <strong>Monetización transparente (Google Play Billing):</strong> Gestionar la compra única opcional de <strong>ZenSave Pro</strong> y su restauración en nuevos dispositivos. <strong>ZenSave no muestra anuncios comerciales ni integra redes publicitarias</strong> (como Google AdMob) ni en su versión gratuita ni en la versión Pro.
+        </li>
+        <li>
+          <strong>Notificaciones y recordatorios:</strong> Mostrar las alertas locales que hayas activado (alarmas de metas, días de cobro, resúmenes o gastos detectados) y avisos informativos de servicio cuando autorices notificaciones.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2.x Marketing Directo -->
+    <section>
+      <h2 class="policy-section-title">Marketing Directo</h2>
+      <p class="policy-text">
+        ZenSave no envía comunicaciones comerciales ni correos electrónicos promocionales a sus usuarios. Solo enviamos o respondemos correos transaccionales o de soporte cuando tú los solicitas o nos escribes (por ejemplo, eliminación de cuenta, respuestas a tus consultas, ejercicio de derechos, etc.).
+      </p>
+    </section>
+
+    <!-- 2.y CCPA Do Not Sell/Share -->
+    <section>
+      <h2 class="policy-section-title">Derechos de Privacidad de California (CCPA / CPRA)</h2>
+      <p class="policy-text">
+        Conforme a la Ley de Privacidad del Consumidor de California (CCPA/CPRA), <strong>no vendemos ni compartimos tu información personal o financiera</strong> con terceros para fines comerciales o publicitarios. Solo procesamos los datos estrictamente necesarios para el funcionamiento técnico, copias de seguridad opcionales en la nube y verificación de compras en Google Play, y <strong>no los vendemos, alquilamos ni compartimos para publicidad o marketing</strong>.
+      </p>
+      <p class="policy-text">
+        Si eres residente de California y deseas ejercer cualquiera de tus derechos bajo la CCPA/CPRA (acceso, eliminación, etc.), puedes hacerlo a través del siguiente enlace:
+      </p>
+      <ul class="policy-list">
+        <li>
+          <strong>Do Not Sell My Personal Information:</strong>
+          Consulta nuestra <a href="do-not-sell.html" target="_blank" rel="noopener">Política sobre la Venta de Información Personal</a> para conocer tus derechos y opciones.
+        </li>
+        <li>
+          <strong>Email de contacto:</strong>
+          <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a>
+        </li>
+      </ul>
+      <p class="policy-text">
+        En esa página encontrarás la confirmación de que <strong>actualmente no vendemos datos personales</strong> y podrás, de requerirlo en el futuro, ejercer tu derecho de exclusión (“opt-out”). Atenderemos tu solicitud en un plazo máximo de 45 días, de acuerdo con la normativa vigente.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">3. Compartición y Transferencia de Datos</h2>
+      <section>
+        <p class="policy-text"><strong>3.1. Con Terceros de Confianza</strong></p>
+        <ul class="policy-list">
+          <li>
+            <strong>Proveedores de Servicios:</strong> Compartimos o procesamos información limitada únicamente con proveedores tecnológicos esenciales para el funcionamiento de las opciones conectadas del servicio, tales como:
+            <ul class="policy-list">
+              <li>
+                <strong>Firebase (Authentication, Firestore, Analytics, Crashlytics, Performance, App Check y mensajería):</strong> Se utiliza para la gestión opcional de cuenta, copias de seguridad en la nube para usuarios Pro, seguridad anti-fraude y monitoreo técnico del rendimiento y errores.
+              </li>
+              <li>
+                <strong>Google Play Billing y Google Play In-App Review:</strong> Para gestionar de forma segura la compra única vitalicia de ZenSave Pro y las calificaciones voluntarias en la tienda. Consulta la
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a> y la
+                <a href="https://developer.android.com/google/play/billing/overview" target="_blank" rel="noopener">Política de Facturación de Google Play</a> para más detalles.
+              </li>
+              <li>
+                <strong>Proveedores públicos de tasas de cambio:</strong> Consultados de forma anónima únicamente para obtener tipos de cambio referenciales entre divisas sin transmitir datos del usuario.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>3.2. Excepciones Legales</strong></p>
+        <ul class="policy-list">
+          <li>
+            Podemos divulgar tus datos limitados en cumplimiento de obligaciones legales válidas o cuando sea necesario para proteger derechos, la seguridad y el funcionamiento de la app.
+          </li>
+          <li>
+            En ningún caso se venderán tus datos personales o financieros a terceros.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>3.3. Transferencia Internacional de Datos</strong></p>
+        <ul class="policy-list">
+          <li>
+            <strong>Procesamiento en Servidores Extranjeros:</strong> Los datos opcionales almacenados en Firebase pueden ser procesados en servidores ubicados en Estados Unidos y en otras regiones donde Google opera.
+          </li>
+          <li>
+            <strong>Medidas de Protección:</strong> Google aplica medidas de seguridad y protección adecuadas, cumpliendo con estándares internacionales como el GDPR, para garantizar que tus datos estén protegidos durante la transferencia y el procesamiento.
+          </li>
+          <li>
+            Al utilizar las funciones conectadas de ZenSave, aceptas que dichos datos limitados sean transferidos a estas jurisdicciones.
+          </li>
+        </ul>
+        <ul class="policy-list">
+          <li>
+            <strong>Transferencias a EE. UU. y otras regiones:</strong> amparadas por las Cláusulas Contractuales Tipo (SCC) aprobadas por la Comisión Europea
+            (<a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_es" target="_blank" rel="noopener">texto oficial de SCC</a>)
+            y por el EU-US Data Privacy Framework
+            (<a href="https://www.dataprivacyframework.gov/" target="_blank" rel="noopener">información del Framework</a>).
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">4. Retención y Seguridad de la Información</h2>
+
+      <section>
+        <p class="policy-text"><strong>4.1. Retención</strong></p>
+        <ul class="policy-list">
+          <li>
+            <strong>Datos financieros locales en tu teléfono:</strong> Se conservan únicamente en tu dispositivo bajo tu control hasta que los edites, borres tus registros o desinstales la aplicación. (Recuerda que si usas la app en modo gratuito o sin respaldo en la nube activo, al desinstalar o perder el teléfono no podremos recuperar datos que solo estaban guardados en tu dispositivo).
+          </li>
+          <li>
+            <strong>Respaldo opcional en la nube (ZenSave Pro):</strong> Se almacena en tu espacio privado mientras mantengas tu cuenta activa. Tras 24 meses de inactividad prolongada sin iniciar sesión, podremos eliminar automáticamente las copias inactivas.
+          </li>
+          <li>
+            <strong>Información de cuenta Google y licencia vinculada en la nube:</strong> Se conservan hasta que elimines tu cuenta desde la app o mediante solicitud de soporte, o un máximo de 24 meses tras inactividad prolongada de la cuenta.
+          </li>
+          <li>
+            <strong>Datos técnicos de uso y rendimiento:</strong> Los registros técnicos agregados se retienen habitualmente hasta 12 meses para análisis de estabilidad y mejora de la app.
+          </li>
+          <li>
+            <strong>Notificaciones bancarias y portapapeles:</strong> Se procesan en memoria en el instante y nunca se retienen en servidores externos.
+          </li>
+          <li>
+            <strong>Alternativa y guía web de borrado:</strong> Puedes consultar todos los pasos en nuestra página de <a href="eliminar-cuenta.html" target="_blank" rel="noopener">Solicitud de Eliminación de Cuenta</a> o solicitar asistencia manual escribiéndonos a <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a>.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>4.2. Medidas de Seguridad</strong></p>
+        <p class="policy-text">
+          Implementamos medidas técnicas, administrativas y físicas para proteger tus datos, incluyendo el uso obligatorio de conexiones cifradas mediante HTTPS/TLS (bloqueando conexiones sin cifrar o certificados de usuario no confiables en compilaciones oficiales). Además, Firebase cifra automáticamente los datos en reposo en sus servidores, restringimos cada documento únicamente al propietario autenticado, validamos la legitimidad de la aplicación con servicios de integridad de Google Play y aplicamos límites de seguridad frente a automatizaciones abusivas (como un tope de intentos diarios de acceso y respaldo, y un máximo de 1 eliminación de cuenta en la nube por semana). Aunque adoptamos estándares de seguridad avanzados, ningún sistema es 100 % infalible.
+        </p>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>4.3. Copia de Seguridad y Restauración Automática (ZenSave Pro)</strong></p>
+        <p class="policy-text">
+          Si adquieres ZenSave Pro e inicias sesión con Google Sign-In, puedes habilitar la copia de seguridad de tu base de datos financiera en la nube (Firebase). Si existe un respaldo previo al iniciar sesión en un nuevo dispositivo, la app te permite restaurar tu información de inmediato. En modo activo, el respaldo automático se ejecuta cada 24 horas en segundo plano y también puede iniciarse manualmente desde <em>Ajustes</em>.
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">5. Base Legal y Derechos del Usuario</h2>
+      <section>
+        <p class="policy-text"><strong>5.1. Base Legal (Para Usuarios en la UE y Otras Jurisdicciones)</strong></p>
+        <ul class="policy-list">
+          <li><strong>Art. 6(1)(a) GDPR – Consentimiento:</strong> para vincular tu cuenta opcional de Google, habilitar la detección automática de pagos por notificaciones, activar el bloqueo biométrico o recibir notificaciones del sistema.</li>
+          <li><strong>Art. 6(1)(b) GDPR – Ejecución de contrato:</strong> para ofrecer las herramientas solicitadas en la aplicación, validar compras únicas ZenSave Pro y ejecutar copias de seguridad o restauraciones en la nube.</li>
+          <li><strong>Art. 6(1)(c) GDPR – Obligaciones legales:</strong> para cumplimiento normativo y atención de requerimientos legales válidos.</li>
+          <li><strong>Art. 6(1)(f) GDPR – Interés legítimo:</strong> para diagnosticar fallos graves, proteger los servidores contra bots o abusos y preservar la estabilidad de la aplicación.</li>
+        </ul>
+        <p class="policy-text">
+          Puedes retirar tu consentimiento tan fácilmente como lo diste (Art. 7(3) GDPR) desde <em>Ajustes → Seguridad y Privacidad</em>, <em>Ajustes → Detección de Pagos</em> o desde la configuración de permisos de Android.
+        </p>
+      </section>
+
+      <section>
+        <p class="policy-text"><strong>5.2. Derechos del Usuario</strong></p>
+        <ul class="policy-list">
+          <li>Acceso, corrección y eliminación de tus datos personales.</li>
+          <li>Limitación del tratamiento (Art. 18 GDPR).</li>
+          <li>No ser objeto de decisiones automatizadas (Art. 22 GDPR).</li>
+          <li>Portabilidad de datos (directamente dentro de ZenSave Pro exportando tus registros a CSV o Excel, o solicitando copia de los datos vinculados a tu cuenta).</li>
+          <li>Retirar tu consentimiento en cualquier momento.</li>
+        </ul>
+        <p class="policy-text">
+          Respondemos a tus solicitudes en un plazo máximo de 30 días para usuarios en la UE (Art. 12(3) GDPR) y 45 días para residentes de California (CCPA). Para ejercer estos derechos o para cualquier consulta relacionada con tu privacidad, contáctanos a:<br>
+          <strong>Email:</strong> <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a>.
+        </p>
+      </section>
+    </section>
+
+    <!-- Sección 6. Datos de Menores -->
+    <section>
+      <h2 class="policy-section-title">6. Datos de Menores</h2>
+      <ul class="policy-list">
+        <li>
+          <strong>Público Dirigido:</strong> ZenSave está diseñada para usuarios de <strong>16 años o más</strong>.
+        </li>
+        <li>
+          <strong>Verificación de edad en el inicio:</strong><br>
+          Antes de permitir la configuración de datos financieros o la vinculación con Google, solicitamos confirmar la edad del usuario como parte del primer paso inicial. Si el usuario indica ser menor de 16 años, el acceso a la app se bloquea inmediatamente, en cumplimiento con las políticas de Google Play.
+        </li>
+        <li>
+          <strong>Limitaciones de verificación:</strong><br>
+          No recopilamos ni verificamos la edad mediante documentos ni métodos adicionales a la edad indicada por el usuario, porque no almacenamos información sensible innecesaria ni accedemos a datos de la cuenta de Google sin su consentimiento. En consecuencia, si un usuario proporciona una edad falsa para eludir el bloqueo, no contamos con medios técnicos adicionales para detectarlo.
+        </li>
+        <li>
+          <strong>Uso de la edad en la app:</strong><br>
+          La edad ingresada se utiliza únicamente de manera local para habilitar o restringir el acceso inicial según nuestro requisito mínimo (+16). Esta información no se almacena con fines comerciales ni se comparte con terceros.
+        </li>
+        <li>
+          <strong>Menores de 13 años:</strong><br>
+          La app no está dirigida a menores de 13 años y no recopilamos intencionalmente datos personales de menores de esa edad. Si en algún momento se nos notifica que un usuario menor de edad ha accedido a la app utilizando una cuenta en la nube, procederemos a eliminar cualquier dato asociado a su uso y a restringir el acceso futuro.
+        </li>
+        <li>
+          <strong>Contacto para tutores o padres:</strong><br>
+          Si un padre o tutor cree que un menor de edad está utilizando la aplicación, puede escribirnos a <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a> solicitando la eliminación de los datos y el bloqueo de acceso.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">7. Uso de Cookies y Tecnologías de Rastreo</h2>
+      <p class="policy-text">
+        La aplicación móvil <strong>ZenSave</strong> no utiliza cookies propias ni cookies publicitarias de terceros; únicamente utiliza almacenamiento local del dispositivo para conservar tus registros financieros, idioma, tema visual y preferencias de seguridad.
+      </p>
+      <p class="policy-text">
+        En esta página web de políticas utilizamos almacenamiento local del navegador para recordar el idioma que elijas en el menú superior junto con el servicio de Google Translate para mostrar este documento en tu idioma.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">8. Cambios en la Política de Privacidad</h2>
+      <ul class="policy-list">
+        <li>Nos reservamos el derecho a actualizar esta política de privacidad ocasionalmente.</li>
+        <li>Te informaremos sobre cambios significativos mediante avisos dentro de la app (o notificaciones cuando corresponda) y actualizaremos la fecha de "Última actualización" en este documento.</li>
+        <li>Te recomendamos revisar esta política periódicamente desde <em>Ajustes → Seguridad y Privacidad</em> o desde nuestra página oficial de políticas.</li>
+        <li>Cualquier futura incorporación de funciones opcionales que impliquen nuevos tratamientos de datos continuará sujeta a tu consentimiento previo y revocable en cualquier momento desde Ajustes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">9. Contacto</h2>
+      <p class="policy-text">
+        Si tienes dudas, comentarios o solicitudes relacionadas con tu privacidad, por favor contáctanos a:<br>
+        <strong>Desarrollador:</strong> IgniSquare (ZenSave)<br>
+        <strong>Email:</strong> <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Primero nuestro script personalizado -->
+  <script src="script.js"></script>
+  <!-- Luego el script de Google Translate, que llamará a googleTranslateElementInit -->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

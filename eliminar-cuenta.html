@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solicitud de eliminación de cuenta y datos asociados para ZenSave (IgniSquare).">
+  <meta name="theme-color" content="#ffffff">
+  <title>Eliminar Cuenta – ZenSave</title>
+  
+  <!-- Fuente Material Design -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Contenedor del widget de Google Translate, ocultado fuera de pantalla -->
+  <div id="google_translate_element"></div>
+  
+<!-- Custom Widget de Traducción -->
+<div id="custom_translate_wrapper">
+  <select id="custom_translate">
+    <option value="">🌍 Idiomas</option>
+    <option value="es">Español</option>
+    <option value="en">Inglés</option>
+    <option value="fr">Francés</option>
+    <option value="pt-BR">Português (Brasil)</option>
+    <option value="de">Alemán</option>
+    <option value="it">Italiano</option>
+  </select>
+</div>
+
+  <main class="policy-container">
+    <h1 class="policy-title">Solicitud de Eliminación de Cuenta</h1>
+    <p class="policy-text"><strong>Aplicación:</strong> ZenSave (IgniSquare)</p>
+    <p class="policy-text">
+      En ZenSave, operado por IgniSquare, respetamos tu derecho a la privacidad y te ofrecemos formas directas y claras de eliminar tu cuenta y todos tus datos asociados. A continuación, se detallan:
+    </p>
+
+    <section>
+      <h2 class="policy-section-title">1. Eliminación desde la app</h2>
+      <p class="policy-text">
+        Puedes borrar tu cuenta y todos tus datos directamente siguiendo el método que corresponda según cómo utilices la aplicación:
+      </p>
+      <ul class="policy-list">
+        <li>
+          <strong>Opción A (Si vinculaste una cuenta de Google en la app):</strong>
+          Desde la sección de Ajustes:
+          <ul class="policy-list">
+            <li>Abre <strong>ZenSave</strong> y ve a <em>Ajustes → Seguridad y Privacidad</em>.</li>
+            <li>Desplázate hasta la sección <em>Gestión de Cuenta en la Nube</em> y pulsa <strong>"Eliminar mi Cuenta"</strong> (habilitado cuando tienes la sesión iniciada).</li>
+            <li>Se mostrará una advertencia clara detallando que esto borrará permanentemente tu cuenta en la nube y todos tus datos financieros (sueldo, historial de gastos e ingresos, metas de ahorro, respaldos en la nube y ajustes locales).</li>
+            <li>Se activará una <strong>cuenta regresiva de seguridad de 10 segundos</strong> antes de habilitar el botón de confirmación final.</li>
+            <li>Presiona <strong>"Borrar permanentemente"</strong> para eliminar de forma inmediata e irreversible:
+              <ul class="policy-list">
+                <li>Tu cuenta de autenticación en Firebase y la sesión vinculada en tu teléfono.</li>
+                <li>Tu perfil de usuario, copias de seguridad en la nube, registros de aceptación de términos y el registro de licencia Pro asociado a esa cuenta en Firestore.</li>
+                <li>La base de datos local, archivos temporales y preferencias en tu dispositivo.</li>
+                <li>Se restablecerá ZenSave a su estado limpio inicial.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Opción B (Si usas ZenSave sin cuenta de Google · Modo 100 % local):</strong>
+          <ul class="policy-list">
+            <li>Si nunca iniciaste sesión con Google, tus datos viven únicamente en tu dispositivo y no guardamos copias en ningún servidor.</li>
+            <li>Para borrar toda tu información financiera de inmediato, simplemente desinstala <strong>ZenSave</strong> o entra a <em>Ajustes de tu teléfono Android → Aplicaciones → ZenSave → Almacenamiento → Borrar datos</em>.</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="policy-text">
+        <strong>Nota sobre protección anti-abuso:</strong> Por seguridad, el dispositivo conserva localmente un control temporal que solo permite realizar la eliminación completa de una cuenta en la nube una vez cada 7 días (este control se elimina si desinstalas la app).
+      </p>
+      <p class="policy-text">
+        <strong>¿Solo quieres desactivar la Detección de Pagos o cerrar sesión sin borrar tus finanzas locales?</strong><br>
+        Si únicamente deseas dejar de detectar notificaciones o desvincular tu sesión de Google sin perder tu historial guardado en el dispositivo, ve a <em>Ajustes → Detección de Pagos</em> para desactivar la escucha (y revoca el permiso en Android), o cierra sesión desde la cabecera de cuenta en <em>Ajustes</em>.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">2. Eliminación manual vía correo</h2>
+      <p class="policy-text">
+        Si por algún motivo no puedes usar la app para eliminar tu cuenta vinculada en la nube, o necesitas asistencia adicional, escríbenos a:
+      </p>
+      <ul class="policy-list">
+        <li><strong>Email de soporte y eliminación:</strong> <a href="mailto:ignisquare@gmail.com">ignisquare@gmail.com</a></li>
+        <li><strong>Asunto sugerido:</strong> “Eliminar mi cuenta ZenSave”</li>
+      </ul>
+      <p class="policy-text">
+        En el correo, indica lo siguiente:
+      </p>
+      <ul class="policy-list">
+        <li>La dirección de correo de Google registrada en ZenSave.</li>
+        <li>El identificador único de usuario (UID) si lo conoces (opcional, pero acelera el proceso).</li>
+        <li>Confirma que solicitas la eliminación total de tu cuenta y datos.</li>
+      </ul>
+      <p class="policy-text">
+        Recibirás un mensaje confirmando que tu solicitud ha sido recibida en un plazo de 48 horas laborables. Luego, en un máximo de 30 días, tu cuenta en la nube y todos los datos asociados se borrarán de nuestros sistemas.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">3. ¿Qué datos se eliminarán?</h2>
+      <p class="policy-text">
+        Cuando elimines tu cuenta, se borrarán de forma permanente e irreversible todos los datos siguientes:
+      </p>
+      <ul class="policy-list">
+        <li><strong>Cuenta de autenticación (Firebase Authentication):</strong> credenciales de acceso vinculadas y sesión activa.</li>
+        <li><strong>Perfil de cuenta en Firestore (<code>users/{uid}</code>):</strong> nombre visible, correo electrónico, foto de perfil vinculada y fecha de actualización.</li>
+        <li><strong>Copias de seguridad financieras en la nube (<code>user_backups/{uid}</code>):</strong> todos los respaldos de tu sueldo, ingresos, gastos, gastos fijos, metas de ahorro, abonos, objetivos y preferencias guardadas en Firebase.</li>
+        <li><strong>Registro de compra Pro en la nube (<code>PremiumUser/{uid}</code>):</strong> el documento asociado a esa cuenta en nuestros servidores con los datos de validación de licencia.</li>
+        <li><strong>Registro de consentimiento de términos (<code>termsConsents/{uid}</code>):</strong> el documento con tu historial de aceptación de políticas.</li>
+        <li><strong>Base de datos local del dispositivo:</strong> todos los registros financieros, configuraciones y cachés guardados en tu teléfono (al ejecutar el borrado desde la app).</li>
+      </ul>
+      <p class="policy-text">
+        <strong>Nota sobre notificaciones bancarias y biometría:</strong> ZenSave no guarda mensajes bancarios ni datos de huella o rostro en la nube, ya que los pagos detectados se procesan exclusivamente dentro de tu dispositivo y el sensor biométrico es gestionado directamente por tu sistema Android.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">4. Retenciones y exclusiones</h2>
+      <p class="policy-text">
+        Tras la eliminación de tu cuenta:
+      </p>
+      <ul class="policy-list">
+        <li><strong>Datos anónimos de uso:</strong> Algunas estadísticas agregadas y no identificables sobre estabilidad o rendimiento pueden conservarse hasta <strong>12 meses</strong> con fines técnicos y de mejora de la aplicación. Estos registros no contienen saldos ni están vinculados a tu identidad.</li>
+        <li><strong>Información legalmente obligatoria:</strong> Ciertos registros que gestionan plataformas externas (como el historial propio de compras en Google Play Store) pueden retenerse el tiempo que exijan las leyes locales o internacionales.</li>
+      </ul>
+      <p class="policy-text">
+        Una vez transcurrido el período de retención correspondiente, estos registros técnicos anónimos también caducan y se eliminan automáticamente.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">5. Confirmación y plazos</h2>
+      <ul class="policy-list">
+        <li><strong>Eliminación desde la app:</strong> Es inmediata e irreversible en cuanto completas la cuenta regresiva de 10 segundos y confirmas el borrado.</li>
+        <li><strong>Notificación de recepción (solicitud por correo):</strong> En 48 horas laborables recibirás confirmación de que tu solicitud fue recibida.</li>
+        <li><strong>Proceso de eliminación manual y confirmación final:</strong> En un máximo de 30 días tras verificar tu cuenta, procederemos a borrar todo lo descrito en el punto 3 y te confirmaremos por correo cuando haya finalizado.</li>
+      </ul>
+      <p class="policy-text">
+        <strong>Importante sobre ZenSave Pro:</strong> ZenSave Pro se adquiere mediante un <strong>pago único vitalicio</strong> (no existen suscripciones ni cobros mensuales que cancelar). Ten en cuenta que eliminar tu cuenta borra de nuestros servidores tu copia de seguridad en la nube y tu vínculo de cuenta, aunque tu recibo oficial dentro de Google Play Store se rige por las políticas de Google Play.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="policy-section-title">6. Nombre de la app y desarrollador</h2>
+      <p class="policy-text">
+        Esta solicitud de eliminación aplica únicamente a la aplicación <strong>ZenSave</strong>, desarrollada por <strong>IgniSquare</strong>. Asegúrate de que tu mensaje mencione “Eliminar mi cuenta ZenSave” para que podamos procesarlo sin contratiempos.
+      </p>
+    </section>
+  </main>
+  
+  <!-- Primero nuestro script personalizado -->
+  <script src="script.js"></script>
+  <!-- Luego el script de Google Translate -->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
